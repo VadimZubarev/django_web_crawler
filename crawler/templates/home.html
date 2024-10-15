@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action = "search" method = "post">
+	{% csrf_token %}
+    Введи ссылку на статью : <input type='text' name='url_wiki_user_input'><br>
+    <input type='submit'>
+</form>
+
+{% endblock  %}
